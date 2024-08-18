@@ -16,6 +16,9 @@ Pod::Spec.new do |spec|
   spec.resource_bundles = {
     "SNESDeltaCore" => ["SNESDeltaCore/**/*.deltamapping", "SNESDeltaCore/**/*.deltaskin"]
   }
+
+  spec.ios.deployment_target  = '14.0'
+  spec.visionos.deployment_target  = '1.0'
   
   spec.dependency 'DeltaCore'
     
